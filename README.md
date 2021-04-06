@@ -1,2 +1,2 @@
-# blog
+# My Blog
 A blog for growth, business, lifestyle....
