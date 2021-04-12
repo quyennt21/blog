@@ -15,17 +15,20 @@
     "gatsby-plugin-typography": "^3.2.0",
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-transformer-sharp": "^3.2.0",
+    "gray-percentage": "^2.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.19",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "typography-breakpoint-constants": "^0.16.19"
   },
   "devDependencies": {
     "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "@types/react-helmet": "^6.1.0",
     "prettier": "2.2.1"
   },
   "keywords": [
