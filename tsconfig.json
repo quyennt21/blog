@@ -6,13 +6,18 @@
     "lib": ["dom", "es2017"],
     "jsx": "react",
     "strict": true,
+    "declaration": true,
+    "removeComments": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
     "noEmit": true,
     "skipLibCheck": true,
     "moduleResolution": "node",
-    "baseUrl": ".",
+    "baseUrl": "./",
+    "incremental": true,
     "paths": {
       "*": ["node_modules/@types/*", "@types/*"]
     }

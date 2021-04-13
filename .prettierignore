@@ -1,0 +1,6 @@
+# Ignore artifacts
+/.cache
+public
+static
+package-lock.json
+package.json

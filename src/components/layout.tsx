@@ -35,9 +35,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, by Quyen. All rights reserved.
-        </footer>
+        <footer>© {new Date().getFullYear()}, by Quyen. All rights reserved.</footer>
       </div>
     </>
   );

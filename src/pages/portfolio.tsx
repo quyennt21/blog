@@ -2,11 +2,11 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const BlogPage = () => (
+const PortfolioPage = () => (
   <Layout>
-    <SEO title="Blog" />
-    <p>Blog page</p>
+    <SEO title="portfolio" />
+    <p>Portfolio page</p>
   </Layout>
 );
 
-export default BlogPage;
+export default PortfolioPage;
