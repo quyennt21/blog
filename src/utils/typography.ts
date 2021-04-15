@@ -6,11 +6,7 @@ const typography = new Typography({
   googleFonts: [
     {
       name: 'Be Vietnam',
-      styles: ['900'],
-    },
-    {
-      name: 'Be Vietnam',
-      styles: ['400', '400i', '700'],
+      styles: ['400', '400i', '700', '900'],
     },
   ],
   headerFontFamily: ['Be Vietnam', 'sans-serif'],

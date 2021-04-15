@@ -13,5 +13,4 @@ module.exports = {
   facebook: 'https://www.facebook.com/quyennt21',                                    
   instagram: 'https://www.instagram.com/quyennt_',
   github: 'https://github.com/quyennt21',
-
 };
