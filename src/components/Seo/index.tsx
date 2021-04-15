@@ -11,7 +11,7 @@ interface SEOPropsType {
 }
 
 const SEO = (props: SEOPropsType) => {
-  const { description, lang, meta, title, keywords } = props;
+  const { description, lang = 'en', meta, title, keywords } = props;
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -73,6 +73,7 @@ const SEO = (props: SEOPropsType) => {
           content: keywords,
         },
       ].concat(meta ?? [])}
+      defer={false}
     />
   );
 };

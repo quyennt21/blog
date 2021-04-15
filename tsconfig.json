@@ -22,5 +22,5 @@
       "*": ["node_modules/@types/*", "@types/*"]
     }
   },
-  "exclude": ["**/*.spec.ts", "**/*.test.ts", "dist"]
+  "exclude": ["**/*.spec.ts", "**/*.test.ts", "./*.js"]
 }
