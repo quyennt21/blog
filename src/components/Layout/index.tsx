@@ -61,8 +61,7 @@ const Layout = (props: LayoutPropsType) => {
         <div id="content">
           <main>{children}</main>
           <footer>
-            <span>{`© ${new Date().getFullYear()} ${data.site.siteMetadata.author} | Theme by `}</span>
-            <a href="https://github.com/junhobaik">JunhoBaik</a>
+            <span>{`© ${new Date().getFullYear()} ${data.site.siteMetadata.author}`}</span>
           </footer>
         </div>
 

@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch, faMoon, faSun, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -92,7 +91,7 @@ const Header = (props: headerPropsType) => {
         <Link to="/">
           <div className="header-profile-image-wrap">
             <img
-              src='https://robohash.org/quyennt21?set=set4&gravatar=yes&size=100x100'
+              src="https://robohash.org/quyennt21?set=set4&gravatar=yes&size=100x100"
               alt="title profile picture"
               style={{
                 width: imageSize,
