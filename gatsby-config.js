@@ -36,7 +36,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/contents/blog/`,
+        path: `${__dirname}/content/blog/`,
       },
     },
     {
@@ -124,12 +124,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Quyen's blog`,
-        short_name: `blog`,
+        name: `Quyen's Blog`,
+        short_name: `Quyen's Blog`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: ``,
         icon: `src/images/gatsby-icon.png`,
       },
     },

@@ -5,7 +5,7 @@ import MobileDetect from 'mobile-detect';
 
 import { config as FaConfig } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { useColorMode } from 'theme-ui';
 
 import './layout.scss';
@@ -76,7 +76,7 @@ const Layout = (props: LayoutPropsType) => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         >
-          <FontAwesomeIcon icon={faAngleDoubleUp} />
+          <FontAwesomeIcon icon={faArrowUp} />
         </div>
       </div>
     </>

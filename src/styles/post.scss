@@ -1,10 +1,9 @@
 @import './variables.scss';
 
 .blog-post-container {
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 
-  & > div,
-  .ad {
+  & > div {
     max-width: 720px;
     margin: 0 auto;
   }
