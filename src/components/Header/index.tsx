@@ -92,7 +92,7 @@ const Header = (props: headerPropsType) => {
         <Link to="/">
           <div className="header-profile-image-wrap">
             <img
-              src='https://robohash.org/quyennt?set=set4&size=100x100'
+              src='https://robohash.org/quyennt21?set=set4&gravatar=yes&size=100x100'
               alt="title profile picture"
               style={{
                 width: imageSize,
