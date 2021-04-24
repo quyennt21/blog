@@ -59,16 +59,12 @@
       .linkedin,
       .facebook,
       .instagram,
-      .github,
-      .rss {
+      .github {
         width: 1.2rem;
         transition: color 0.3s;
       }
 
       &:hover {
-        .rss {
-          color: rgb(226, 143, 72) !important;
-        }
         .linkedin {
           color: #0077b5 !important;
         }
@@ -79,8 +75,7 @@
           color: #e4405f !important;
         }
         .github {
-          // color: #181717 !important;
-          color: #999 !important;
+          color: rgb(60, 62, 63) !important;
         }
       }
     }

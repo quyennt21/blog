@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle, faAt, faMapMarkerAlt, faLink, faAddressCard, faRss } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle, faAt, faMapMarkerAlt, faLink, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import './bio.scss';
@@ -12,7 +12,6 @@ const Bio = () => {
   return (
     <div className="bio">
       {!comment ? null : <span className="comment">{comment}</span>}
-
       {!name ? null : (
         <div className="bio-item name">
           <div className="icon-wrap">

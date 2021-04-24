@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { graphql, Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +8,7 @@ import { throttle } from 'lodash';
 import Layout from '../components/Layout';
 import Toc from '../components/Toc';
 import SEO from '../components/Seo';
+import ReadingProgress from '../components/ReadingProgress';
 
 import '../styles/post.scss';
 import '../styles/code-theme.scss';
@@ -22,7 +23,7 @@ const Post = (props: postProps) => {
   const { data, pageContext } = props;
   const [yList, setYList] = useState([] as number[]);
   const [isInsideToc, setIsInsideToc] = useState(false);
-
+  const target = useRef(null);
   const { markdownRemark } = data;
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
   const { title, date, tags, keywords } = frontmatter;
@@ -96,7 +97,6 @@ const Post = (props: postProps) => {
     }, 250);
     scrollEvents();
     document.addEventListener('scroll', scrollEvents);
-
     const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[];
     const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
     const yPositions = hs.map((h) => h.offsetTop - minusValue);
@@ -108,9 +108,9 @@ const Post = (props: postProps) => {
   return (
     <>
       <SEO title={title} description={excerpt} keywords={metaKeywords(keywords, tags)} />
-
+      <ReadingProgress target={target} />
       <Layout>
-        <div className="blog-post-container">
+        <div className="blog-post-container" ref={target}>
           <div className="blog-post">
             <h1 className="blog-post-title">{title}</h1>
             <div className="blog-post-info">
@@ -171,7 +171,6 @@ const Post = (props: postProps) => {
             <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </div>
-
         {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
       </Layout>
     </>
