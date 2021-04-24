@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Quyen's Blog`,
-    description: `A blog for growth, business, lifestyle...`,
+    title: `Quyen's blog`,
+    description: `Blog about lifestyle and personal growth.`,
     author: `quyennt`,
-    language: 'en'
+    language: 'en',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -124,11 +124,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Quyen's Blog`,
-        short_name: `Quyen's Blog`,
+        name: `Quyen's blog`,
+        short_name: `Quyen's blog`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#FFFFFF`,
         display: `standalone`,
         icon: `src/images/gatsby-icon.png`,
       },
