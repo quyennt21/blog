@@ -1,6 +1,7 @@
 .reading-progress-bar {
   position: sticky;
-  height: 0.2rem;
+  height: 4px;
   top: 0;
-  background-color: #4c4c4d;
+  background-color: #6f6f76;
+  transition: width 300ms linear 0s;
 }

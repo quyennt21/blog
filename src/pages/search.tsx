@@ -13,22 +13,17 @@ interface SearchProps {
   data: any;
 }
 
-const Search = (props: SearchProps) => {
-  const { data } = props;
+const SearchPage: React.FC<SearchProps> = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
-
   const [value, setValue] = useState('');
   const [isTitleOnly, setIsTitleOnly] = useState(true);
-
   const filteredPosts = useCallback(
     posts.filter((post: any) => {
       const { node } = post;
       const { frontmatter, rawMarkdownBody } = node;
       const { title } = frontmatter;
       const lowerValue = value.toLocaleLowerCase();
-
       if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().includes(lowerValue)) return true;
-
       return title.toLocaleLowerCase().includes(lowerValue);
     }),
     [value, isTitleOnly],
@@ -103,4 +98,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Search;
+export default SearchPage;

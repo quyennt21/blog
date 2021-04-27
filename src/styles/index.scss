@@ -21,7 +21,6 @@ a:visited {
     transition: opacity 0.2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0.1s;
-
     @media screen and (max-width: $break-l) {
       display: none;
     }
@@ -39,7 +38,6 @@ a:visited {
       justify-content: center;
       margin-top: 1rem;
       margin-bottom: 5rem;
-
       .show-more-btn {
         cursor: pointer;
         opacity: 0.5;

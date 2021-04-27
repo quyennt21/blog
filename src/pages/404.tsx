@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 
-const NotFoundPage = () => (
+const NotFoundPage: React.FC = () => (
   <Layout>
     <SEO title="404: Not found" />
     <div
@@ -17,9 +17,6 @@ const NotFoundPage = () => (
         userSelect: 'none',
       }}
     >
-      {/* <div className="icon-wrap">
-        <FontAwesomeIcon icon={faFrown} style={{ minHeight: '10rem', fontSize: '10rem' }} />
-      </div> */}
       <h1 style={{ fontSize: '5rem', margin: '0.5rem 0 1rem 0' }}>404</h1>
       <p>{`That page doesn't exist or is unavailable.`}</p>
     </div>

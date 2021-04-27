@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import { useEffect, useState, useCallback } from 'react';
 import { graphql } from 'gatsby';
@@ -13,10 +12,8 @@ interface TagsPageProps {
   data: any;
 }
 
-const Tags = (props: TagsPageProps) => {
-  const { data } = props;
+const TagsPage: React.FC<TagsPageProps> = ({ data }) => {
   const { group } = data.allMarkdownRemark;
-
   const [largeCount, setLargeCount] = useState(0);
   const [targetTag, setTargetTag] = useState<string | undefined>();
   const [currentPostList, setCurrentPostList] = useState([]);
@@ -124,4 +121,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Tags;
+export default TagsPage;

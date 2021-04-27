@@ -7,8 +7,9 @@ import './bio.scss';
 
 import config from '../../../_config';
 
-const Bio = () => {
+const Bio: React.FC = () => {
   const { comment, name, company, location, email, website, facebook, instagram, github } = config;
+
   return (
     <div className="bio">
       {!comment ? null : <span className="comment">{comment}</span>}

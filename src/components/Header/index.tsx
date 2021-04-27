@@ -9,12 +9,11 @@ import './header.scss';
 import { RootState } from '../../state/reducer';
 import { actionCreators } from '../../state/actions';
 
-interface headerPropsType {
+interface HeaderProps {
   siteTitle: string;
 }
 
-const Header = (props: headerPropsType) => {
-  const { siteTitle } = props;
+const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
   const { isMobile, path, size } = useSelector((state: RootState) => state);
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);

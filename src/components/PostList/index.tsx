@@ -9,18 +9,15 @@ interface PostListProps {
   posts: any[];
 }
 
-const PostList = (props: PostListProps) => {
-  const { posts } = props;
+const PostList: React.FC<PostListProps> = ({ posts }) => {
   const [showCnt, setShowCnt] = useState(10);
   const [currentPostList, setCurrentPostList] = useState<JSX.Element[]>([]);
   const sortedPosts = useMemo(() => {
     posts.sort((a: any, b: any) => {
       const af = a.node.frontmatter;
       const bf = b.node.frontmatter;
-
       const aDate = new Date(af.update.includes('0001') ? af.date : af.update);
       const bDate = new Date(bf.update.includes('0001') ? bf.date : bf.update);
-
       if (aDate < bDate) return 1;
       if (aDate > bDate) return -1;
       return 0;

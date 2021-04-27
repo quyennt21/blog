@@ -5,10 +5,9 @@ interface ReadingProgressProps {
   target: RefObject<any>;
 }
 
-const ReadingProgress = (props: ReadingProgressProps) => {
-  const { target } = props;
-  console.log(target)
+const ReadingProgress: React.FC<ReadingProgressProps> = ({ target }) => {
   const [readingProgress, setReadingProgress] = useState(0);
+
   const scrollListener = () => {
     if (!target.current) {
       return;

@@ -17,12 +17,11 @@ import { throttle } from 'lodash';
 
 FaConfig.autoAddCss = false;
 
-interface LayoutPropsType {
+interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout = (props: LayoutPropsType) => {
-  const { children } = props;
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isTop, setIsTop] = useState(true);
   const dispatch = useDispatch();
   const [colorMode] = useColorMode();

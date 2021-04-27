@@ -6,9 +6,7 @@ interface TocProps {
   isOutside: boolean;
 }
 
-const Toc = (props: TocProps) => {
-  const { toc, isOutside } = props;
-
+const Toc: React.FC<TocProps> = ({ toc, isOutside }) => {
   return <div className={`toc ${isOutside ? 'outside' : 'inside'}`} dangerouslySetInnerHTML={{ __html: toc }}></div>;
 };
 

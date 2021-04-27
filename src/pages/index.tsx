@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
 import PostList from '../components/PostList';
 import Bio from '../components/Bio';
+import SEO from '../components/Seo';
 
 import '../styles/index.scss';
 
@@ -15,8 +15,7 @@ interface IndexPageProps {
   data: any;
 }
 
-const IndexPage = (props: IndexPageProps) => {
-  const { data } = props;
+const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   const title = data.site.siteMetadata.title;
 

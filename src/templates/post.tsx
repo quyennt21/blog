@@ -14,13 +14,12 @@ import '../styles/post.scss';
 import '../styles/code-theme.scss';
 import '../styles/md-style.scss';
 
-interface postProps {
+interface PostProps {
   data: any;
   pageContext: { slug: string; series: any[]; lastmod: string };
 }
 
-const Post = (props: postProps) => {
-  const { data, pageContext } = props;
+const Post: React.FC<PostProps> = ({ data, pageContext }) => {
   const [yList, setYList] = useState([] as number[]);
   const [isInsideToc, setIsInsideToc] = useState(false);
   const target = useRef(null);

@@ -34,18 +34,15 @@
       line-height: 1.1;
       overflow: hidden;
     }
-
     &.name,
     &.company,
     &.location {
       cursor: default;
     }
   }
-
   .comment {
     margin-bottom: 1rem;
   }
-
   .social {
     display: flex;
     margin-left: 0.2rem;
@@ -55,19 +52,13 @@
       display: inline-flex;
       font-size: 1.3rem;
       margin-right: 0.5rem;
-
-      .linkedin,
       .facebook,
       .instagram,
       .github {
         width: 1.2rem;
         transition: color 0.3s;
       }
-
       &:hover {
-        .linkedin {
-          color: #0077b5 !important;
-        }
         .facebook {
           color: #1877f2 !important;
         }
