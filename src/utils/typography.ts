@@ -1,16 +1,16 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '17px',
+  baseFontSize: '16px',
   baseLineHeight: 1.666,
   googleFonts: [
     {
-      name: 'Open Sans',
-      styles: ['400', '400i', '600', '900'],
+      name: 'Merriweather',
+      styles: ['400', '400i', '600', '700', '900'],
     },
   ],
-  headerFontFamily: ['Open Sans', 'sans-serif'],
-  bodyFontFamily: ['Open Sans', 'sans-serif'],
+  headerFontFamily: ['Merriweather', 'Open Sans', 'sans-serif'],
+  bodyFontFamily: ['Merriweather', 'Open Sans', 'sans-serif'],
 });
 
 export default typography;
