@@ -5,12 +5,12 @@ const typography = new Typography({
   baseLineHeight: 1.666,
   googleFonts: [
     {
-      name: 'Be Vietnam',
-      styles: ['400', '400i', '700', '900'],
+      name: 'Open Sans',
+      styles: ['400', '400i', '600', '900'],
     },
   ],
-  headerFontFamily: ['Be Vietnam', 'sans-serif'],
-  bodyFontFamily: ['Be Vietnam', 'sans-serif'],
+  headerFontFamily: ['Open Sans', 'sans-serif'],
+  bodyFontFamily: ['Open Sans', 'sans-serif'],
 });
 
 export default typography;
