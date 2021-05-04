@@ -12,6 +12,7 @@ interface PostListProps {
 const PostList: React.FC<PostListProps> = ({ posts }) => {
   const [showCnt, setShowCnt] = useState(10);
   const [currentPostList, setCurrentPostList] = useState<JSX.Element[]>([]);
+  
   const sortedPosts = useMemo(() => {
     posts.sort((a: any, b: any) => {
       const af = a.node.frontmatter;

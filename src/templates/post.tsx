@@ -86,8 +86,8 @@ const Post: React.FC<PostProps> = ({ data, pageContext }) => {
 
   useEffect(() => {
     const postContentOriginTop = document.querySelector('.blog-post')?.getBoundingClientRect().top ?? 0;
-    const removeScrollEvent = () => document.removeEventListener('scroll', scrollEvents);
 
+    const removeScrollEvent = () => document.removeEventListener('scroll', scrollEvents);
     const scrollEvents = throttle(() => {
       const postContentHeight = document.querySelector('.blog-post')?.getBoundingClientRect().height ?? Infinity;
       if (window.scrollY + window.innerHeight * 1.75 - postContentOriginTop > postContentHeight) {

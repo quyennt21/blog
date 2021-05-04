@@ -4,7 +4,7 @@ module.exports = {
   author: `quyennt`,
   language: 'vi-VN',
   siteUrl: 'https://quyennt.gtsb.io',
-  comment: `Blog about lifestyle and personal growth`,
+  comment: `Hi, I'm Sr. Software Engineer, I write a blog about lifestyle and personal growth.`,
   name: 'Quyen Nguyen',
   company: '',
   location: 'Ha noi',
